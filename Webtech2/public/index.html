@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kecskeméti Gábor bookstore</title>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body class="loginpage">
+
+<br>
+<div class="container main-container bg-gradient-primary shadow rounded pt-0 pb-0 px-5">
+
+  <div class="jumbotron">
+
+
+    <h1>Üdvözöljük Kecskeméti Gábor könyvesboltjában</h1>
+
+     <p>
+       Rendelkezik felhasználó fiókkal? Nagyszerű! Akkor kérem jelentkezzen be be!
+       Ha még nincs felhasználója? Akkor regisztráljon egyet, és máris válogathat a könyvekből a világ minden tájáról.
+     </p>
+   </div>
+   <hr>
+
+   <div class="row">
+     <div class="col-sm-6">
+       <h2>Bejelenetkezés</h2>
+       <form action="/login" method="post">
+         <div class="form-group">
+           <label for="name">Felhasználónév</label>
+           <input type="text" class="form-control" id="name" placeholder="Kérem adja meg a felhasználó nevét!" name="name" required>
+         </div>
+         <div class="form-group">
+           <label for="pwd">Jelszó</label>
+           <input type="password" class="form-control" id="pwd" placeholder="Kérem adja meg a jelszavát!" name="pswd" required>
+         </div>
+         <button type="submit" class="btn btn-success float-right">Belépés</button>
+       </form>
+     </div>
+
+
+     <div class="col-sm-6">
+       <h2>Regisztrálás</h2>
+
+       <form action="/register" method="post">
+         <div class="form-group">
+           <label for="name">Felhasználónév</label>
+           <input type="text" class="form-control" id="rname" placeholder="Adjon meg egy szabad felhasználónevet" name="name" required>
+         </div>
+         <div class="form-group">
+           <label for="pwd">Jelszó</label>
+           <input type="password" class="form-control" id="rpwd" placeholder="Adjon meg egy jelszót (max 8 karakter)" name="pswd" required>
+         </div>
+         <div class="form-group">
+           <label for="email">Email</label>
+           <input type="text" class="form-control" id="rname" placeholder="Adja meg az email címét" name="email" required>
+         </div>
+         <div class="form-group">
+           <label for="age">Születési idő</label>
+           <input type="date" class="form-control" id="birth" placeholder="Adja meg a születési dátumát" name="birth" required>
+         </div>
+         <div class="form-group">
+           <label for="address">Szállítási cím</label>
+           <input type="text" class="form-control" id="address" placeholder="Adja meg lakcímét" name="address" required>
+         </div>
+         <button type="submit" class="btn btn-primary float-left">Regisztrálok</button>
+       </form>
+     </div>
+   </div>
+
+
+
+  <hr>
+  
+  <div class="jumbotron">
+    <div class="d-flex bd-highlight">
+       <div class="flex-fill bd-highlight align-middle text-center  ">Copyright &copy; 2020</div>
+       <div class="flex-fill bd-highlight align-middle text-center border-right border-left border-dark">
+         Kecskeméti Gábor bookstore Kft.
+         <br>ÁSZF
+         <br>Licence
+       </div>
+       <div class="flex-fill bd-highlight align-middle text-center">
+         Kapcsolat: keke00@freemail.hu
+       </div>
+    </div>
+  </div>
+
+
+</div>
+
+
+
+
+</body>
+</html>
